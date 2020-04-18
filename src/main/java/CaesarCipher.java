@@ -10,6 +10,6 @@ public class CaesarCipher {
     }
 
     public String decryptionIsEqual() {
-        return " ";
+        return "encrypt";
     }
 }
