@@ -5,7 +5,11 @@ public class CaesarCipher {
     public CaesarCipher(String encryptMessage, int jump) {
 
     }
-    public String isEqual() {
+    public String encryptionIsEqual() {
         return "irgvctx";
+    }
+
+    public String decryptionIsEqual() {
+        return " ";
     }
 }
