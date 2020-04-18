@@ -1,8 +1,10 @@
 public class CaesarCipher {
-    private String encrypt;
-    private int jump;
-    StringBuilder charResult=new StringBuilder();
+    private String mEncryptMessage;
+    private int mkey;
+    private StringBuilder charResult=new StringBuilder();
     public CaesarCipher(String encryptMessage, int key) {
+        this.mEncryptMessage=encryptMessage;
+        this.mkey=key;
     for (char character:encryptMessage.toCharArray())
     {
 //        encryption Code
@@ -16,6 +18,7 @@ public class CaesarCipher {
         {
             charResult.append(character);
         }
+
 
 //        decryption code
         if (character!=' ')
@@ -31,6 +34,16 @@ public class CaesarCipher {
     }
 //    return charResult;
     }
+
+    public String getEncryptMessage()
+    {
+        return mEncryptMessage;
+    }
+    public Integer getKey()
+    {
+        return mkey;
+    }
+
     public String encryptionIsEqual() {
         return "irgvctx";
     }
