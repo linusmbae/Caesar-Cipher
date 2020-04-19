@@ -37,6 +37,10 @@ public class App {
                     System.out.println("Key:" + caesar.getmKey());
                     System.out.println("Encrypted message:" +caesar.getCharResult());
                 }
+                else
+                {
+                    System.out.println("Wrong number selection (0-25)");
+                }
 
             }else if(navigator.equals("Decrypt"))
             {
@@ -54,6 +58,10 @@ public class App {
                     System.out.println("Message:" + decrypt.gemDecryptMessage());
                     System.out.println("Key:" + decrypt.gemDecryptKey());
                     System.out.println("Decrypted message:" + decrypt.getDecryptResult());
+                }
+                else
+                {
+                    System.out.println("Wrong number selection (0-25)");
                 }
             }else if (navigator.equals("Exit"))
             {
