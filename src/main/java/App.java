@@ -1,5 +1,4 @@
 import java.io.Console;
-import java.io.IOException;
 
 public class App {
     public static void main(String[] args)
@@ -52,8 +51,8 @@ public class App {
                 {
                     decryptCaesarCipher decrypt =new decryptCaesarCipher(message,key);
                     System.out.println("..........................");
-                    System.out.println("Message:" + decrypt.getmDecryptMessage());
-                    System.out.println("Key:" + decrypt.getmDecryptKey());
+                    System.out.println("Message:" + decrypt.gemDecryptMessage());
+                    System.out.println("Key:" + decrypt.gemDecryptKey());
                     System.out.println("Decrypted message:" + decrypt.getDecryptResult());
                 }
             }else if (navigator.equals("Exit"))

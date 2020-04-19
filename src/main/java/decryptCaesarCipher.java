@@ -30,11 +30,11 @@ public class decryptCaesarCipher {
         return "encrypt";
     }
 
-    public String getmDecryptMessage() {
+    public String gemDecryptMessage() {
         return mDecryptMessage;
     }
 
-    public int getmDecryptKey() {
+    public int gemDecryptKey() {
         return mDecryptKey;
     }
 }
