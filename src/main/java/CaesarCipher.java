@@ -21,18 +21,22 @@ public class CaesarCipher {
 
 
 //        decryption code
-        if (character!=' ')
-        {
-            int characterPosition=character - 'a';
-            int newPosition=(characterPosition-key)%26;
-            char newChar=(char)('a'+newPosition);
-            charResult.append(newChar);
-        }else
-        {
-            charResult.append(character);
-        }
+//        if (character!=' ')
+//        {
+//            int characterPosition=character - 'a';
+//            int newPosition=(characterPosition-key)%26;
+//            char newChar=(char)('a'+newPosition);
+//            charResult.append(newChar);
+//        }else
+//        {
+//            charResult.append(character);
+//        }
     }
 //    return charResult;
+    }
+
+    public StringBuilder getCharResult() {
+        return charResult;
     }
 
     public String getmEncryptMessage() {

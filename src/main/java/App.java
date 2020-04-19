@@ -30,7 +30,14 @@ public class App {
                 System.out.println("Encryption key (0-25)");
                 Integer key=Integer.parseInt(console.readLine()) ;
 
-
+                if (key>=1&&key<=25)
+                {
+                    CaesarCipher caesar=new CaesarCipher(message,key);
+                    System.out.println("..........................");
+                    System.out.println(caesar.getmEncryptMessage());
+                    System.out.println(caesar.getmKey());
+                    System.out.println(caesar.getCharResult());
+                }
 
             }else if(navigator.equals("Decrypt"))
             {
@@ -41,7 +48,10 @@ public class App {
                 System.out.println("Decryption key (0-25)");
                 Integer key=Integer.parseInt(console.readLine()) ;
 
+                if (key>=1&&key<=25)
+                {
 
+                }
             }else if (navigator.equals("Exit"))
             {
                 programRunning = false;
