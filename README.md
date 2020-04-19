@@ -11,9 +11,6 @@ Copy the clone link.
 Navigate through your local storage to your favourite directory through terminal.
 Clone the App to your local storage and launch it.
  
-# Live Link
-[CaesarCipher](https://linusmbae.github.io/Caesar-Cipher/)
-
 ## Reach me
 [Email](linusmutugi5178@gmail.com) 
 
