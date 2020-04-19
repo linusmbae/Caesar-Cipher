@@ -30,10 +30,7 @@ public class App {
                 System.out.println("Encryption key (0-25)");
                 Integer key=Integer.parseInt(console.readLine()) ;
 
-                if (key>=1&&key<=25)
-                {
 
-                }
 
             }else if(navigator.equals("Decrypt"))
             {
@@ -44,10 +41,7 @@ public class App {
                 System.out.println("Decryption key (0-25)");
                 Integer key=Integer.parseInt(console.readLine()) ;
 
-                if (key>=1&&key<=25)
-                {
 
-                }
             }else if (navigator.equals("Exit"))
             {
                 programRunning = false;

@@ -1,10 +1,10 @@
 public class CaesarCipher {
     private String mEncryptMessage;
-    private int mkey;
+    private int mKey;
     private StringBuilder charResult=new StringBuilder();
     public CaesarCipher(String encryptMessage, int key) {
         this.mEncryptMessage=encryptMessage;
-        this.mkey=key;
+        this.mKey=key;
     for (char character:encryptMessage.toCharArray())
     {
 //        encryption Code
@@ -35,13 +35,12 @@ public class CaesarCipher {
 //    return charResult;
     }
 
-    public String getEncryptMessage()
-    {
+    public String getmEncryptMessage() {
         return mEncryptMessage;
     }
-    public Integer getKey()
-    {
-        return mkey;
+
+    public int getmKey() {
+        return mKey;
     }
 
     public String encryptionIsEqual() {
