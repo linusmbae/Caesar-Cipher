@@ -14,15 +14,5 @@ public class CaesarCipherEncryptTest {
         CaesarCipher testCaesarCipher=new CaesarCipher("encrypt", 4);
         assertEquals("irgvctx", testCaesarCipher.encryptionIsEqual());
     }
-    @Test
-    public void decryptData_instantiatesCorrectly_true() throws Exception {
-        CaesarCipher testCaesarCipher = new CaesarCipher("irgvctx",4);
-        assertEquals(true, testCaesarCipher instanceof CaesarCipher);
-    }
 
-    @Test
-    public void decryptData_testMessage() throws Exception {
-        CaesarCipher testCaesarCipher = new CaesarCipher("irgvctx", 4);
-        assertEquals("encrypt",testCaesarCipher.decryptionIsEqual());
-    }
 }

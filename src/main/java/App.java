@@ -1,5 +1,4 @@
 import java.io.Console;
-import java.io.IOException;
 
 public class App {
     public static void main(String[] args)
@@ -32,7 +31,11 @@ public class App {
 
                 if (key>=1&&key<=25)
                 {
-
+                    CaesarCipher caesar=new CaesarCipher(message,key);
+                    System.out.println("..........................");
+                    System.out.println("Message:" + caesar.getmEncryptMessage());
+                    System.out.println("Key:" + caesar.getmKey());
+                    System.out.println("Encrypted message:" +caesar.getCharResult());
                 }
 
             }else if(navigator.equals("Decrypt"))
@@ -46,7 +49,11 @@ public class App {
 
                 if (key>=1&&key<=25)
                 {
-
+                    decryptCaesarCipher decrypt =new decryptCaesarCipher(message,key);
+                    System.out.println("..........................");
+                    System.out.println("Message:" + decrypt.gemDecryptMessage());
+                    System.out.println("Key:" + decrypt.gemDecryptKey());
+                    System.out.println("Decrypted message:" + decrypt.getDecryptResult());
                 }
             }else if (navigator.equals("Exit"))
             {
